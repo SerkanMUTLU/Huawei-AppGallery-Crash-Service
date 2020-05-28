@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<Button
+    android:id="@+id/btnDivideByZero"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="64dp"
+    android:layout_marginTop="56dp"
+    android:text="Divide by Zero"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<Button
+    android:id="@+id/btnNullException"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="null pointer exception"
+    app:layout_constraintStart_toStartOf="@+id/btnDivideByZero"
+    app:layout_constraintTop_toBottomOf="@+id/btnDivideByZero" />
+
+    <Button
+        android:id="@+id/btnDivideWithTry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Divide By Zero in Try Catch"
+        app:layout_constraintStart_toStartOf="@+id/btnNullException"
+        app:layout_constraintTop_toBottomOf="@+id/btnNullException" />
+</androidx.constraintlayout.widget.ConstraintLayout>
